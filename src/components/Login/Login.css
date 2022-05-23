@@ -1,0 +1,35 @@
+.login-form {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(25, 25, 25);
+    border-radius: 7px;
+    padding: 20px 40px;
+    height: 700px;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form * {
+    color: white;
+}
+
+.input-login * {
+    color: grey !important;
+}
+
+.input-login {
+    margin-bottom: 20px !important;
+}
+
+.login-form div:before {
+    border-bottom: 1px solid grey !important;
+}
+
+.login-form div:after {
+    border-bottom: 1px solid rgb(91, 28, 230) !important;
+}
