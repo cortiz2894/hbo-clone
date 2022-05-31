@@ -26,7 +26,14 @@ const Login = () => {
                 variant='standard' 
                 className='input-login'
             />
-            <button>INICIAR SESION</button>
+            <button className='iniciar-sesion'>INICIAR SESION</button>
+            <p className='pregunta'>¿Olvidaste tu contraseña?</p>
+            <div className="linea"></div>
+            <p> o </p>
+            <div className="linea"></div>
+            <p>¿Tienes HBO Max a través de un proveedor de TV, Internet o telefonía móvil?</p> 
+            <button className='proveedor'>INGRESAR CON UN PROVEEDOR</button>
+            <p className='pregunta'>¿Necesitas ayuda?</p>
         </div>
     )
 }

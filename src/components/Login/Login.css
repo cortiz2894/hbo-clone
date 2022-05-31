@@ -5,10 +5,50 @@
     text-align: center;
     background: rgb(25, 25, 25);
     border-radius: 7px;
+    margin: 100px 250px;
     padding: 20px 40px;
     height: 700px;
 }
 
+h2 {
+    font-size: 36px;
+    color: rgb(240, 240, 240);
+
+}
+
+p {
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+}
+
+button.iniciar-sesion {
+    border-radius: 50px;
+    background-color: #4e4c4c;
+    color: gray;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 15px;
+
+}
+.linea {
+    background-color: rgb(127, 127, 127); 
+    width: 187px; 
+    height: 1px; 
+    top: 9.5px;
+}
+
+p.pregunta { 
+    color: rgb(172, 139, 245);
+}
+
+button.proveedor {
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
 .App {
     display: flex;
     justify-content: center;
