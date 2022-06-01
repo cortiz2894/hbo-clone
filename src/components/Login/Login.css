@@ -23,12 +23,17 @@ p {
 
 button.iniciar-sesion {
     border-radius: 50px;
-    background-color: #4e4c4c;
-    color: gray;
+    font-weight: 600;
+    color: white;
     margin-left: 130px;
     margin-right: 130px;
     padding: 15px;
-
+    background-image: linear-gradient(90deg, rgb(71, 16, 193), rgb(120, 87, 255) 92%, rgb(129, 155, 253) 100%);
+}
+button.iniciar-sesion:disabled {
+    background: grey;
+    color: #4d4d4d;
+    border: none;
 }
 .linea {
     background-color: rgb(127, 127, 127); 
@@ -36,9 +41,20 @@ button.iniciar-sesion {
     height: 1px; 
     top: 9.5px;
 }
-
+.login-form h2 {
+    margin-bottom: 10px;
+}
+.separator-line p {
+    margin: 0px 10px;
+    text-transform: uppercase;
+    color: #7f7f7f;
+}
 p.pregunta { 
     color: rgb(172, 139, 245);
+}
+.separator-line {
+    display: flex;
+    align-items: center;
 }
 
 button.proveedor {
@@ -57,13 +73,15 @@ button.proveedor {
 .login-form * {
     color: white;
 }
-
-.input-login * {
-    color: grey !important;
+.input-login label, .input-login label.Mui-focused, .input-login input {
+    color: grey;
 }
-
+.input-login label.Mui-error {
+    color: #d32f2f;
+}
 .input-login {
     margin-bottom: 20px !important;
+    width: 100%;
 }
 
 .login-form div:before {
