@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './Login.css'
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 //Propiedades (Props)
 //Ciclo de vida 
@@ -12,12 +13,19 @@ import axios from 'axios';
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
+    const navigate = useNavigate()
     const handleSubmit = () => {
-        console.log("SE ENVIO EL FORMULARIO con los datos:", email, password)
+        // console.log("SE ENVIO EL FORMULARIO con los datos:", email, password)
         axios.post('http://challenge-react.alkemy.org', {
             email: email,
             password: password
+        })
+        .then( () => {
+            console.log("Usuario logueado correctamente")
+            navigate('/')
+        })
+        .catch( () => {
+            console.log("Error al loguearse")
         })
     }
     const handleChange = (e) => {
